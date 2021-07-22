@@ -46,4 +46,5 @@ driver.save_screenshot('Finish Selection.png')
 im = Image.open('Finish Selection.png')
 im = im.crop((int(x), int(y), int(width), int(height)))
 im.save('Seat Selection.png')
-# browser.quit()
+
+driver.quit()
