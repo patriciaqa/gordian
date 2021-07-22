@@ -6,24 +6,33 @@ It should work if the selected seat is a regular seat, and also if it's on an ex
 
 
 
-Setup of evironment:
+#Setup of evironment:
 1. Install Chocolatey (package manager)
+* https://chocolatey.org/install
 2. Install Python
-3. Install Selenium and Selenium drivers all
-4. Install Chromedriver
-5. Install Pillow
+$ choco install python
+3. Install Selenium
+$ choco install selenium
+4. Install Selenium drivers all
+$ choco install selenium-all-drivers
+5. Install Chromedriver
+$ choco install chromedriver
+6. Install Pillow
+$  pip install Pillow
+7. Install opencv-python
+$ pip install opencv-python
 
 
 How run project:
 
 # Windows:
-Step 1: clone the project to pc
-Step 2: In PowerShell or CMD, access path until "/gordian"
-Step 3: Run: $ .\virtual\Scripts\activate.ps1
-Step 4: Run: $ python test.py
+* Step 1: clone the project to pc
+* Step 2: In PowerShell or CMD, access until path "/gordian"
+* Step 3: Run: $ .\virtual\Scripts\activate.ps1
+* Step 4: Run: $ python test.py
 
 # Linux/Unix:
-Step 1: clone the project to pc
-Step 2: In CMD, access path until "/gordian"
-Step 3: Run: $ .\virtual\Scripts\activate
-Step 4: Run: $ python test.py
+* Step 1: clone the project to pc
+* Step 2: In CMD, access until path "/gordian"
+* Step 3: Run: $ .\virtual\Scripts\activate
+* Step 4: Run: $ python test.py

@@ -1,8 +1,10 @@
 from selenium.webdriver import Chrome
+from selenium.webdriver.common.alert import Alert
 from time import sleep
 from PIL import Image
 import cv2
 import numpy as np
+import sys
 
 #setting browser
 url = 'https://static.gordiansoftware.com/'
@@ -15,16 +17,28 @@ driver.get(url)
 
 sleep(2)
 
-# Seat selection
+def confirm_select_seat():
+    try:
+        driver.find_element_by_xpath('//*[@id="select-seat"]').click()
+    except Exception:
+        # if seat is exit row
+        painel = driver.find_element_by_id('gordian-overlay')
+        if painel.find_element_by_xpath('//*[@id="exit-overlay"]/div/div'):
+            driver.find_element_by_id('accept_exit_regulations').click()
+        driver.find_element_by_xpath('//*[@id="select-seat"]').click()
+    finally:
+        driver.find_element_by_xpath('//*[@id="next-button"]').click()
+
+
+# Seat selection 24B
 driver.find_element_by_xpath('//*[@id="gordian-compartments"]/div[7]/div[1]/button[2]').click()
-driver.find_element_by_xpath('//*[@id="select-seat"]').click()
-driver.find_element_by_xpath('//*[@id="next-button"]').click()
+confirm_select_seat()
 
 sleep(2)
 
+# Seat selection 24C
 driver.find_element_by_xpath('//*[@id="gordian-compartments"]/div[7]/div[1]/button[3]').click()
-driver.find_element_by_xpath('//*[@id="select-seat"]').click()
-driver.find_element_by_xpath('//*[@id="next-button"]').click()
+confirm_select_seat()
 
 # Screenshot
 sleep(3)
