@@ -28,11 +28,11 @@ $ pip install opencv-python
 # Windows:
 * Step 1: clone the project to pc
 * Step 2: In PowerShell or CMD, access until path "/gordian"
-* Step 3: Run: $ .\virtual\Scripts\activate.ps1
+* Step 3: Run: $ .Scripts\activate.ps1
 * Step 4: Run: $ python test.py
 
 # Linux/Unix:
 * Step 1: clone the project to pc
 * Step 2: In CMD, access until path "/gordian"
-* Step 3: Run: $ .\virtual\Scripts\activate
+* Step 3: Run: $ .\Scripts\activate
 * Step 4: Run: $ python test.py
