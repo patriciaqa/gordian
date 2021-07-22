@@ -6,7 +6,7 @@ It should work if the selected seat is a regular seat, and also if it's on an ex
 
 
 
-#Setup of evironment:
+# Setup of evironment:
 1. Install Chocolatey (package manager)
 * https://chocolatey.org/install
 2. Install Python
@@ -23,7 +23,7 @@ $  pip install Pillow
 $ pip install opencv-python
 
 
-How run project:
+# How run project:
 
 # Windows:
 * Step 1: clone the project to pc
