@@ -11,6 +11,8 @@ Setup of evironment:
 2. Install Python
 3. Install Selenium and Selenium drivers all
 4. Install Chromedriver
+5. Install Pillow
+
 
 How run project:
 
@@ -25,4 +27,3 @@ Step 1: clone the project to pc
 Step 2: In CMD, access path until "/gordian"
 Step 3: Run: $ .\virtual\Scripts\activate
 Step 4: Run: $ python test.py
-
